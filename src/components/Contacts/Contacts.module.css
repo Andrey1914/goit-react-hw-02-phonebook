@@ -1,0 +1,40 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  list-style-type: disc;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.text {
+  margin-right: 20px;
+}
+
+.btn {
+  font-size: 16px;
+  width: 100px;
+  height: 30px;
+  padding: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  background-color: rgb(255, 136, 136);
+  box-shadow: 0px 3px 5px 1px rgba(45, 90, 124, 0.2);
+  transition: background-color 250ms linear, transform 250ms ease-in-out;
+}
+
+.btn:hover {
+  background-color: rgb(255, 0, 0);
+  color: #ffffff;
+  transform: scale(1.2);
+}
